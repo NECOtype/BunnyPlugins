@@ -31,7 +31,5 @@
 <style>
 	main {
 		height: inherit;
-		padding: 1rem;
-		border: 1px dashed var(--cbor);
 	}
 </style>

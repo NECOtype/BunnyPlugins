@@ -25,6 +25,6 @@ a {
 	color: inherit;
 
 	&:hover {
-		color: var(--yellow);
+		color: var(--cyel);
 	}
 }
