@@ -3,19 +3,19 @@
     "name": "Ubuntu",
     "previewText": "Ubuntu is an OpenType-based font family, designed to be a modern, humanist-style typeface by London-based type foundry Dalton Maag, with funding by Canonical Ltd.",
     "main": {
-        "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
-        "ggsans-SemiBold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
-        "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_BoldItalic.ttf?raw=1",
-        "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Normal.ttf?raw=1",
-        "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Italic.ttf?raw=1",
-        "ggsans-Medium": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Medium.ttf?raw=1",
-        "ggsans-MediumItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_MediumItalic.ttf?raw=1",
-        "NotoSans-Bold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
-        "NotoSans-SemiBold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
-        "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Medium.ttf?raw=1",
-        "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Normal.ttf?raw=1",
-        "NotoSans-NormalItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Italic.ttf?raw=1",
-        "SourceCodePro-SemiBold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1"
+        "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
+        "ggsans-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
+        "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_BoldItalic.ttf?raw=1",
+        "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Normal.ttf?raw=1",
+        "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Italic.ttf?raw=1",
+        "ggsans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Medium.ttf?raw=1",
+        "ggsans-MediumItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_MediumItalic.ttf?raw=1",
+        "NotoSans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
+        "NotoSans-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1",
+        "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Medium.ttf?raw=1",
+        "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Normal.ttf?raw=1",
+        "NotoSans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Italic.ttf?raw=1",
+        "SourceCodePro-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/ubuntu/Ubuntu_Bold.ttf?raw=1"
     },
 	"source": "fontsource.org"
 }

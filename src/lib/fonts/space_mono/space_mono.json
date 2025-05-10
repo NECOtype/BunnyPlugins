@@ -3,19 +3,19 @@
     "name": "Space Mono",
     "previewText": "A font designed by Colophon Foundry",
     "main": {
-        "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
-        "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
-        "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
-        "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
-        "ggsans-Semibold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
-        "ggsans-SemiboldItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
-        "NotoSans-Bold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
-        "NotoSans-ExtraBold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
-        "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
-        "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
-        "NotoSans-NormalItalic": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
-        "NotoSans-Semibold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
-        "SourceCodePro-Semibold": "https://github.com/NECOtype/BunnyPlugin/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1"
+        "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
+        "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
+        "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
+        "ggsans-Semibold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "ggsans-SemiboldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
+        "NotoSans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "NotoSans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
+        "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
+        "NotoSans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
+        "NotoSans-Semibold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "SourceCodePro-Semibold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1"
     },
 	"source": "fontsource.org"
 }
