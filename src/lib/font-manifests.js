@@ -1,5 +1,5 @@
 export const fontData = {
-	commitmono: () => import('./fonts/commitmono/commitmono.json'),
+	commit_mono: () => import('./fonts/commit_mono/commit_mono.json'),
 	lato: () => import('./fonts/lato/lato.json'),
 	montserrat: () => import('./fonts/montserrat/montserrat.json'),
 	space_mono: () => import('./fonts/space_mono/space_mono.json'),

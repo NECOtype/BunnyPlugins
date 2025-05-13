@@ -2,5 +2,5 @@
 
 To use, copy the following link in your Bunny's Fonts page
 ```html
-https://bunny.kat.tf/fonts/commitmono
+https://bunny.kat.tf/fonts/commit_mono
 ```

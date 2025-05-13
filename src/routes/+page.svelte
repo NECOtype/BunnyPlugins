@@ -14,7 +14,7 @@
 		<article>
 			<header>Fonts</header>
 			<ul>
-				<li><a href="/fonts/commitmono">CommitMono</a></li>
+				<li><a href="/fonts/commit_mono">Commit Mono</a></li>
 				<li><a href="/fonts/space_mono">Space Mono</a></li>
 				<li><a href="/fonts/ubuntu">Ubuntu</a></li>
 			</ul>
