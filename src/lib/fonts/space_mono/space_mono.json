@@ -3,8 +3,13 @@
     "name": "Space Mono",
     "previewText": "A font designed by Colophon Foundry",
     "main": {
+        "ABCGintoNord-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
         "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
         "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
+        "ggsans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
+        "ggsans-ExtraBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_BoldItalic.ttf?raw=1",
+        "ggsans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
+        "ggsans-MediuamItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
         "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Normal.ttf?raw=1",
         "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Italic.ttf?raw=1",
         "ggsans-Semibold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/space_mono/Space_Mono_Bold.ttf?raw=1",
