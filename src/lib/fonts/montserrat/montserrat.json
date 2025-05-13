@@ -1,0 +1,29 @@
+{
+    "spec": 1,
+    "name": "Monsterrat",
+    "previewText": "Montserrat is a geometric sans-serif typeface designed by Argentine graphic designer Julieta Ulanovsky and released in 2011.",
+    "main": {
+        "ABCGintoNord-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/monsterrat/montserrat_ExtraBold.ttf?raw=1",
+        "ggsans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBold.ttf?raw=1",
+        "ggsans-ExtraBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBoldItalic.ttf?raw=1",
+        "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Bold.ttf?raw=1",
+        "ggsans-BoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_BoldItalic.ttf?raw=1",
+        "ggsans-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBold.ttf?raw=1",
+        "ggsans-SemiBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBoldItalic.ttf?raw=1",
+        "ggsans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Medium.ttf?raw=1",
+        "ggsans-MediumItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_MediumItalic.ttf?raw=1",
+        "ggsans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Normal.ttf?raw=1",
+        "ggsans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Italic.ttf?raw=1",
+        "NotoSans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Bold.ttf?raw=1",
+        "NotoSans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBold.ttf?raw=1",
+        "NotoSans-ExtraBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBoldItalic.ttf?raw=1",
+        "NotoSans-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBold.ttf?raw=1",
+        "NotoSans-SemiBold"Italic: "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBoldItalic.ttf?raw=1",
+        "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Medium.ttf?raw=1",
+        "NotoSans-MediumItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_MediumItalic.ttf?raw=1",
+        "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Normal.ttf?raw=1",
+        "NotoSans-NormalItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Italic.ttf?raw=1",
+        "SourceCodePro-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBold.ttf?raw=1"
+    },
+	"source": "fontsource.org"
+}
