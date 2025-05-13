@@ -1,9 +1,9 @@
 {
     "spec": 1,
-    "name": "Monsterrat",
+    "name": "Montserrat",
     "previewText": "Montserrat is a geometric sans-serif typeface designed by Argentine graphic designer Julieta Ulanovsky and released in 2011.",
     "main": {
-        "ABCGintoNord-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/monsterrat/montserrat_ExtraBold.ttf?raw=1",
+        "ABCGintoNord-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBold.ttf?raw=1",
         "ggsans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBold.ttf?raw=1",
         "ggsans-ExtraBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBoldItalic.ttf?raw=1",
         "ggsans-Bold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Bold.ttf?raw=1",
@@ -18,7 +18,7 @@
         "NotoSans-ExtraBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBold.ttf?raw=1",
         "NotoSans-ExtraBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_ExtraBoldItalic.ttf?raw=1",
         "NotoSans-SemiBold": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBold.ttf?raw=1",
-        "NotoSans-SemiBold"Italic: "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBoldItalic.ttf?raw=1",
+        "NotoSans-SemiBoldItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_SemiBoldItalic.ttf?raw=1",
         "NotoSans-Medium": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Medium.ttf?raw=1",
         "NotoSans-MediumItalic": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_MediumItalic.ttf?raw=1",
         "NotoSans-Normal": "https://github.com/NECOtype/BunnyPlugins/raw/main/static/fonts/montserrat/montserrat_Normal.ttf?raw=1",
