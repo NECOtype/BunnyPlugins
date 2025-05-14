@@ -16,7 +16,7 @@ export async function GET({ params, request }) {
 
 	const fontLoader = fontData[fontName];
 	if (!fontLoader) {
-		return new Response(JSON.stringify({ error: `Font "${fontName}" not found.`}), {
+		return new Response(JSON.stringify({ error: `Font "${fontName}" not found.` }), {
 			status: 404,
 			headers: { 'Content-Type': 'application/json' }
 		});
@@ -25,7 +25,7 @@ export async function GET({ params, request }) {
 	try {
 		const module = await fontLoader();
 		const jsonData = module.default;
-		
+
 		return new Response(JSON.stringify(jsonData), {
 			headers: {
 				'Content-Type': 'application/json',

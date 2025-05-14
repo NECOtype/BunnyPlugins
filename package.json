@@ -26,8 +26,7 @@
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.2.5",
-    "@fontsource/space-mono": "^5.2.5",
-    "pocketbase": "^0.26.0"
+    "@fontsource/space-mono": "^5.2.5"
   },
   "module": "index.ts"
 }
