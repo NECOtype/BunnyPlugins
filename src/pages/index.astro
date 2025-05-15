@@ -1,27 +1,33 @@
 ---
-const modules = import.meta.glob('../../public/fonts/*.json', { eager: true});
-const fonts = Object.values(modules).map((module: any) => module.default);
+import Layout from '../layouts/Layout.astro'
+import Link from '../componenets/Link.astro'
+
+const modules = import.meta.glob('../fonts/*/*.json', { eager: true })
+const fonts = Object.values(modules).map((mod: any) => mod.default)
+
+function getFontId(fontName: string) {
+	return fontName?.replace(' ', '_').toLowerCase()
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<main>
-			<h1>BunnyPlugins</h1>
-			<section>
-				<h2>Fonts</h2>
-				<ul>
-					{fonts.map((font) =>
-					<li><a href={"fonts/" + font.name.replace(" ", "_").toLowerCase() + ".json"} class="font-link">{font.name}</a></li>
-					)}
-				</ul>
-			</section>
-		</main>
-	</body>
-</html>
+<Layout title={'NECOdes - BunnyPlugins'}>
+	<h1>BunnyPlugins</h1>
+	<section>
+		<h2>Fonts</h2>
+		<ul>
+			{
+				fonts.map((font) => (
+					<li>
+						<Link
+							href={
+								'fonts/' + getFontId(font.name) + '/README.md'
+							}
+						>
+							{font.name}
+						</Link>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</Layout>

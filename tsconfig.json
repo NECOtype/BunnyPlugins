@@ -1,11 +1,14 @@
 {
-	"extends": "astro/tsconfigs/strict",
-	"include": [".astro/types.d.ts", "**/*"],
-	"exclude": ["dist"],
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@fonts/*": ["src/fonts/*.json"]
-		}
-	}
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@fonts/*": ["src/fonts/*.json"],
+      "@layouts/*": ["src/layouts/*.astro"],
+      "@utils": ["src/lib/utils.js"],
+      "@components/*": ["src/componenets/*.astro"]
+    }
+  }
 }
