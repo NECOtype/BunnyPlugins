@@ -1,0 +1,55 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '../../layouts/Layout.astro'
+import FontPage from '../../layouts/FontPage.astro'
+
+// utils
+import { slugify } from '../../lib/utils.js'
+
+// Json
+
+// export const getStaticPaths = (() => {
+// 	const modules = import.meta.glob('../../content/fonts/*/**.json', {
+// 		eager: true,
+// 	})
+// 	const mdFiles = Object.values(modules).map((mod: any) => mod.default)
+//
+// 	return mdFiles.map((file) => {
+// 		console.log(slugify(file.name))
+// 		return {
+// 			params: {
+// 				font: slugify(file.name),
+// 			},
+// 			props: {
+// 				fontName: file.name,
+// 				text: file.previewText,
+// 			},
+// 		}
+// 	})
+// }) satisfies GetStaticPaths
+
+import { getCollection, getEntry } from 'astro:content'
+
+const allFontMarks = await getCollection('fontmark')
+const allFontJsons = await getCollection('fontjson')
+
+export const getStaticPaths = (() => {
+	return allFontMarks.map((file) => {
+		console.log(file.title)
+		return {
+			params: { font: slugify(file.title) },
+			props: {
+				fontName: file.title,
+				description: file.description,
+			},
+		}
+	})
+}) satisfies GetStaticPaths
+
+const { font } = Astro.params
+const { fontName, description } = Astro.props
+---
+
+<Layout title={fontName}>
+	<FontPage />
+</Layout>

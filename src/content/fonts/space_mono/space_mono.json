@@ -21,6 +21,5 @@
     "NotoSans-Normal": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/space_mono/Space_Mono_Normal.ttf",
     "NotoSans-NormalItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/space_mono/Space_Mono_Italic.ttf",
     "SourceCodePro-Semibold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/space_mono/Space_Mono_Bold.ttf"
-  },
-  "source": "fontsource.org"
+  }
 }

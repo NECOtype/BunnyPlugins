@@ -1,13 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Link from '../componenets/Link.astro'
+import { slugify } from '@utils'
 
-const modules = import.meta.glob('../fonts/*/*.json', { eager: true })
+const modules = import.meta.glob('../content/fonts/*/**.json', { eager: true })
 const fonts = Object.values(modules).map((mod: any) => mod.default)
-
-function getFontId(fontName: string) {
-	return fontName?.replace(' ', '_').toLowerCase()
-}
 ---
 
 <Layout title={'NECOdes - BunnyPlugins'}>
@@ -19,12 +16,9 @@ function getFontId(fontName: string) {
 				fonts.map((font) => (
 					<li>
 						<Link
-							href={
-								'fonts/' + getFontId(font.name) + '/README.md'
-							}
-						>
-							{font.name}
-						</Link>
+							href={`fonts/${slugify(font.name)}`}
+							text={font.name}
+						/>
 					</li>
 				))
 			}
