@@ -1,0 +1,27 @@
+---
+const modules = import.meta.glob('../../public/fonts/*.json', { eager: true});
+const fonts = Object.values(modules).map((module: any) => module.default);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<main>
+			<h1>BunnyPlugins</h1>
+			<section>
+				<h2>Fonts</h2>
+				<ul>
+					{fonts.map((font) =>
+					<li><a href={"fonts/" + font.name.replace(" ", "_").toLowerCase() + ".json"} class="font-link">{font.name}</a></li>
+					)}
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>
