@@ -1,6 +1,0 @@
-{
-	"/": [],
-	"/fonts/[fontName]": [
-		"src/routes/fonts/[fontName]/+server.js"
-	]
-}

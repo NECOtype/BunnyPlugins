@@ -10,6 +10,6 @@ date: 2025-5-10
 
 
 
-```html frame="terminal" title="To use, copy the following link in your Bunny's Fonts page"
+```html frame="code" title="Copy the font link your Bunny app"
 https://bunny.kat.tf/fonts/montserrat
 ```

@@ -1,6 +1,5 @@
 ---
 import '@fontsource/ibm-plex-sans-condensed';
-import Skeleton from './Skeleton.astro';
 import Head from '@components/Head';
 
 interface Props {
@@ -10,12 +9,16 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<Skeleton>
-	<Head {title} />
-	<main>
-		<slot />
-	</main>
-</Skeleton>
+<html lang="en">
+	<head>
+		<Head title={title}/>
+	</head>
+	<body>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
 
 <style>
 :root {

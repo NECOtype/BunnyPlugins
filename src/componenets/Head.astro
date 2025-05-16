@@ -1,4 +1,7 @@
 ---
+import "../styles/global.css"
+import '@fontsource/ibm-plex-sans-condensed';
+
 interface Props {
 	title: string;
 }
@@ -6,4 +9,8 @@ interface Props {
 const { title } = Astro.props;
 ---
 
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/neco.gif" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
 <title>{title}</title>

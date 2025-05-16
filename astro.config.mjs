@@ -10,10 +10,11 @@ export default defineConfig({
 	adapter: vercel(),
 	integrations: [
 		expressiveCode({
-			themes: ['vitesse-dark'],
+			themes: ["vitesse-dark"],
 			styleOverrides: {
 				borderRadius: "0",
-			},
+				borderColor: "#292929",
+			}
 		})
-	]
+	],
 })
