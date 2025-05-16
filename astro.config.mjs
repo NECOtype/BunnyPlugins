@@ -11,6 +11,9 @@ export default defineConfig({
 	integrations: [
 		expressiveCode({
 			themes: ['vitesse-dark'],
+			styleOverrides: {
+				borderRadius: "0",
+			},
 		})
 	]
 })
