@@ -8,8 +8,6 @@
       "@fonts/*": ["src/fonts/*.json"],
       "@layouts/*": ["src/layouts/*.astro"],
       "@utils": ["src/lib/utils.js"],
-      "@jsons": ["src/content/*/**.js"],
-      "@mds": ["src/content/*/**.md"],
       "@components/*": ["src/componenets/*.astro"]
     }
   }

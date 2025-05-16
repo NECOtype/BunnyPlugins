@@ -1,16 +1,19 @@
 {
   "name": "bunnyplugins",
-  "type": "module",
   "version": "0.0.1",
+  "dependencies": {
+    "@astrojs/vercel": "^8.1.4",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.5",
+    "@fontsource/ibm-plex-sans-condensed": "^5.2.5",
+    "@supabase/supabase-js": "^2.49.4",
+    "astro": "^5.7.13",
+    "astro-expressive-code": "^0.41.2"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "astro": "^5.7.13",
-    "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1"
-  }
+  "type": "module"
 }

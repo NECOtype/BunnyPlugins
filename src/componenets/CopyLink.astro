@@ -1,0 +1,52 @@
+---
+const { link } = Astro.props
+
+const state = false;
+---
+
+<div class="code">
+	<span>{link}</span>
+	<button>{state ? "Copied!" : "Copy" }</button>
+</div>
+
+<style>
+div {
+	display: flex;
+	gap: .5rem;
+}
+span {
+	font-family: monospace;
+	line-height: 1;
+	border: 1px dashed gray;
+	padding-block: 1.2rem 1rem;
+	padding-inline: 1rem;
+	box-shadow: 5px 5px 0px #000000;
+	transform: translate(-5px, -5px);
+	transition: box-shadow 100ms ease-in-out;
+
+	&:hover {
+		box-shadow: 5px 5px 0 var(--cacc);
+		border-color: var(--cacc);
+	}
+}
+button {
+	cursor: pointer;
+	box-shadow: 5px 5px 0px #000000;
+	background-color: oklch(from var(--cbg) calc(1 - 0.8) c h);
+	min-width: 5rem;
+	padding: 1rem;
+	border: 1px dashed gray;
+	transform: translate(-5px, -5px);
+	transition: transform, 50ms ease-in, box-shadow 100ms ease-in-out;
+
+	&:hover {
+		box-shadow: 5px 5px 0 var(--cacc);
+		border-color: var(--cacc);
+	}
+
+	&:active {
+		box-shadow: 0px 0px 0px #000000;
+		transform: translate(-3px, -3px);
+	}
+}
+</style>

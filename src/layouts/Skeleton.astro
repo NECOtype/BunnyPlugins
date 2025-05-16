@@ -1,20 +1,17 @@
 ---
-import '../styles/global.css'
-
-const { title } = Astro.props
+import "../styles/global.css"
+import '@fontsource/ibm-plex-sans-condensed';
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/neco.gif" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<slot />
 	</head>
 	<body>
-		<main>
-			<slot />
-		</main>
+		<slot />
 	</body>
 </html>

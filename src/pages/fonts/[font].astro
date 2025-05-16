@@ -1,55 +1,29 @@
 ---
-import type { GetStaticPaths } from 'astro'
-import Layout from '../../layouts/Layout.astro'
-import FontPage from '../../layouts/FontPage.astro'
+import Layout from '@layouts/Base';
+import FontPage from '@layouts/FontPage';
+import { getCollection, render } from 'astro:content';
+import { slugify } from '../../lib/utils.js';
+import type { CollectionEntry } from 'astro:content';
 
-// utils
-import { slugify } from '../../lib/utils.js'
+export async function getStaticPaths() {
+	const fonts = await getCollection("font");
+	return fonts.map(font => ({
+		params: { font: slugify(font.data.title) },
+		props: font,
+	}))
+}
 
-// Json
+type Props = CollectionEntry<"font">;
 
-// export const getStaticPaths = (() => {
-// 	const modules = import.meta.glob('../../content/fonts/*/**.json', {
-// 		eager: true,
-// 	})
-// 	const mdFiles = Object.values(modules).map((mod: any) => mod.default)
-//
-// 	return mdFiles.map((file) => {
-// 		console.log(slugify(file.name))
-// 		return {
-// 			params: {
-// 				font: slugify(file.name),
-// 			},
-// 			props: {
-// 				fontName: file.name,
-// 				text: file.previewText,
-// 			},
-// 		}
-// 	})
-// }) satisfies GetStaticPaths
-
-import { getCollection, getEntry } from 'astro:content'
-
-const allFontMarks = await getCollection('fontmark')
-const allFontJsons = await getCollection('fontjson')
-
-export const getStaticPaths = (() => {
-	return allFontMarks.map((file) => {
-		console.log(file.title)
-		return {
-			params: { font: slugify(file.title) },
-			props: {
-				fontName: file.title,
-				description: file.description,
-			},
-		}
-	})
-}) satisfies GetStaticPaths
-
-const { font } = Astro.params
-const { fontName, description } = Astro.props
+const post = Astro.props
+const { Content } = await render(post);
 ---
 
-<Layout title={fontName}>
-	<FontPage />
+<Layout title={post.data.title}>
+	<FontPage {...post.data}>
+		<Content />
+	</FontPage>
 </Layout>
+
+<style>
+</style>
