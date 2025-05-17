@@ -1,0 +1,56 @@
+---
+import '@fontsource/ibm-plex-sans-condensed';
+import Head from '@components/Head';
+
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<html lang="en">
+	<head>
+		<Head title={title}/>
+	</head>
+	<body>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style>
+:root {
+	--cbg: #141415;
+	--cfg: #CDCDCD;
+	--ccmt: #465362;
+	--clnk: #7894ab;
+	--cacc: #8ca0dc;
+	--cbor: #252530;
+	--cred: #e6788c;
+	--cyel: #d2a374;
+	--cgre: #a3cd81;
+	--ff: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+html {
+	color: var(--cfg);
+	background-color: var(--cbg);
+	font-family: var(--ff);
+	color-scheme: dark;
+}
+
+body {
+	height: 100svh;
+	padding: 1rem;
+}
+
+main {
+	max-width: 100ch;
+	margin: auto;
+	padding: 1rem;
+	height: 100%;
+	border: 1px dashed var(--cbor);
+}
+</style>

@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro'
+import Link from '../componenets/Link.astro'
+import { slugify } from '@utils'
+
+const modules = import.meta.glob('../content/fonts/*/**.json', { eager: true })
+const fonts = Object.values(modules).map((mod: any) => mod.default)
+---
+
+<Base title={'NECOdes - BunnyPlugins'}>
+	<header>
+		<h1>BunnyPlugins</h1>
+	</header>
+	<section>
+		<h2>Fonts</h2>
+		<ul>
+			{ fonts.map((font) => (
+			<li><Link href={`fonts/${slugify(font.name)}`} text={font.name} /></li>
+			)) }
+		</ul>
+	</section>
+	<section>
+		<h2>Plugins</h2>
+	</section>
+	<section>
+		<h2>Themes</h2>
+	</section>
+</Base>
+
+<style>
+header {
+	border-bottom: 1px solid var(--cbor);
+}
+section {
+	margin-block: 0.5rem;
+}
+li {
+	padding-left: 1rem;
+}
+</style>

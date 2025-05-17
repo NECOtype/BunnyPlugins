@@ -1,0 +1,27 @@
+{
+  "spec": 1,
+  "name": "Commit Mono",
+  "previewText": "Commit Mono is an anonymous and neutral coding font focused on creating a better reading experience.",
+  "main": {
+    "ABCGintoNord-ExtraBold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf",
+    "ggsans-ExtraBold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf",
+    "ggsans-ExtraBoldItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_BoldItalic.ttf",
+    "ggsans-Bold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf",
+    "ggsans-BoldItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_BoldItalic.ttf",
+    "ggsans-Semibold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_SemiBold.ttf",
+    "ggsans-SemiboldItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_SemiBoldItalic.ttf",
+    "ggsans-Medium": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Medium.ttf",
+    "ggsans-MediumItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_MediumItalic.ttf",
+    "ggsans-Normal": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono.ttf",
+    "ggsans-NormalItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Italic.ttf",
+    "NotoSans-ExtraBold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf",
+    "NotoSans-Bold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf",
+    "NotoSans-Semibold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_SemiBold.ttf",
+    "NotoSans-SemiboldItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_SemiBoldItalic.ttf",
+    "NotoSans-Medium": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Medium.ttf",
+    "NotoSans-MediumItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Medium.ttf",
+    "NotoSans-Normal": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono.ttf",
+    "NotoSans-NormalItalic": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Italic.ttf",
+    "SourceCodePro-Semibold": "https://sezkvhwxiqvtokeurtxz.supabase.co/storage/v1/object/public/fonts/commit_mono/commit_mono_Bold.ttf"
+  }
+}

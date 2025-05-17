@@ -1,0 +1,29 @@
+---
+import Layout from '@layouts/Base';
+import FontPage from '@layouts/FontArticle';
+import { getCollection, render } from 'astro:content';
+import { slugify } from '../../lib/utils.js';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+	const fonts = await getCollection("font");
+	return fonts.map(font => ({
+		params: { font: slugify(font.data.title) },
+		props: font,
+	}))
+}
+
+type Props = CollectionEntry<"font">;
+
+const post = Astro.props
+const { Content } = await render(post);
+---
+
+<Layout title=`Fonts - ${post.data.title}`>
+	<FontPage {...post.data}>
+		<Content />
+	</FontPage>
+</Layout>
+
+<style>
+</style>
