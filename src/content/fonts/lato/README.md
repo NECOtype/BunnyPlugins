@@ -2,6 +2,7 @@
 title: Lato
 source: fontsource.org
 date: 2025-5-10
+slug: lato
 ---
 
 # Lato
@@ -9,5 +10,5 @@ date: 2025-5-10
 > Lato is a humanist sans-serif typeface designed by Łukasz Dziedzic. It was released in 2010.[3] The name "Lato" is Polish for "summer".[4] Lato was published under the open-source Open Font License.
 
 ```html title="Paste the font link in your Revenge app"
-https://bunny.kat.tf/fonts/lato
+https://revenge.kat.tf/fonts/lato.json
 ```

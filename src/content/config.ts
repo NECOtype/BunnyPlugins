@@ -6,7 +6,8 @@ const fontCollection = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		source: z.string(),
-		date: z.string().or(z.date()).transform((val) => new Date(val).toLocaleDateString())
+		date: z.string().or(z.date()).transform((val) => new Date(val).toLocaleDateString()),
+		slug: z.string().optional(),
 	})
 });
 
