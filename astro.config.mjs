@@ -1,20 +1,41 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
-
+import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
+import rehypePrettyCode from 'rehype-pretty-code';
+import {
+	transformerMetaHighlight,
+	transformerNotationDiff,
+	transformerRenderWhitespace,
+} from '@shikijs/transformers';
 
-import expressiveCode from 'astro-expressive-code';
-
-// https://astro.build/config
 export default defineConfig({
+	markdown: {
+		syntaxHighlight: false, // disabling defautl highligher
+		rehypePlugins: [
+			[
+				rehypePrettyCode,
+				{
+					theme: {
+						light: 'everforest-dark',
+						dark: 'everforest-dark',
+					},
+					transformers: [
+						transformerNotationDiff(),
+						transformerMetaHighlight(),
+						transformerRenderWhitespace(),
+					],
+				},
+			],
+		],
+	},
+
+	devToolbar: {
+		enabled: false,
+	},
+
 	adapter: vercel(),
-	integrations: [
-		expressiveCode({
-			themes: ["vitesse-dark"],
-			styleOverrides: {
-				borderRadius: "0",
-				borderColor: "#292929",
-			}
-		})
-	],
+	vite: {
+		plugins: [tailwindcss()],
+	},
 })

@@ -2,13 +2,13 @@
 import Layout from '@layouts/Base';
 import FontPage from '@layouts/FontArticle';
 import { getCollection, render } from 'astro:content';
-import { slugify } from '../../lib/utils.js';
+import { sluggit } from '../../lib/utils.js';
 import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
 	const fonts = await getCollection("font");
 	return fonts.map(font => ({
-		params: { font: slugify(font.data.title) },
+		params: { id: sluggit(font.data.title) },
 		props: font,
 	}))
 }

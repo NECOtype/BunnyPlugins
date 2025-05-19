@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro'
 import Link from '../componenets/Link.astro'
-import { slugify } from '@utils'
+import { sluggit } from '@utils'
 
 const modules = import.meta.glob('../content/fonts/*/**.json', { eager: true })
 const fonts = Object.values(modules).map((mod: any) => mod.default)
@@ -15,7 +15,7 @@ const fonts = Object.values(modules).map((mod: any) => mod.default)
 		<h2>Fonts</h2>
 		<ul>
 			{ fonts.map((font) => (
-			<li><Link href={`fonts/${slugify(font.name)}`} text={font.name} /></li>
+			<li><Link href={`fonts/${sluggit(font.name)}`} text={font.name} /></li>
 			)) }
 		</ul>
 	</section>

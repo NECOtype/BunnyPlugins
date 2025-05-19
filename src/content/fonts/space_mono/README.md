@@ -8,6 +8,6 @@ date: 2025-5-10
 
 > Space Mono is an original fixed-width type family designed by Colophon Foundry for Google Design. It supports a Latin Extended glyph set.
 
-```html frame="code" title="Copy the font link your Bunny app"
+```text title="Paste the font link in your Revenge app"
 https://bunny.kat.tf/fonts/space_mono
 ```

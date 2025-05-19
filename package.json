@@ -2,12 +2,17 @@
   "name": "bunnyplugins",
   "version": "0.0.1",
   "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vercel": "^8.1.4",
     "@fontsource-variable/ibm-plex-sans": "^5.2.5",
     "@fontsource/ibm-plex-sans-condensed": "^5.2.5",
+    "@shikijs/transformers": "^3.4.2",
     "@supabase/supabase-js": "^2.49.4",
+    "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.13",
-    "astro-expressive-code": "^0.41.2"
+    "rehype-pretty-code": "^0.14.1",
+    "remark-emoji": "^5.0.1",
+    "tailwindcss": "^4.1.7"
   },
   "scripts": {
     "dev": "astro dev",
@@ -15,5 +20,8 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
 }

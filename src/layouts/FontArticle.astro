@@ -6,24 +6,20 @@ type Props = CollectionEntry<'font'>['data'];
 const { title, source, date } = Astro.props;
 ---
 
-<article>
+<article class="prose prose-neutral prose-invert max-w-none">
 	<section>
-		<slot />
 		<p class="date">{date}</p>
+		<slot />
 	</section>
 </article>
 
 <style>
-h1 {
-	font-size: 1.5rem;
-	font-size: clamp(1.8rem, 0.7rem + 5.5vw, 2.4rem);
-}
 .date {
 	font-size: .7rem;
 	font-style: italic;
 	color: oklch(from var(--cfg)  calc(1 - 0.3) c h);
 }
-.description {
-	margin-block: 1rem;
-}
+/* .description { */
+/* 	margin-block: 1rem; */
+/* } */
 </style>
