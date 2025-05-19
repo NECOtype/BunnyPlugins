@@ -1,19 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@tailwind base;
-@tailwind components;
-
 :root {
-	--background: 19.2% 0.002 286.2;
-	--foreground: 84.8% 0 0;
-	--primary: 71.3% 0.0909 269.8;
-	--muted: 43.7% 0.0298 252.2;
-	--links: 65.3% 0.0467 243.3;
-	--border: 26.9% 0.0203 285;
-	--error: 70.2% 0.137 9.7;
-	--warning: 74.8% 0.0836 66;
-	--green: 80% 0.1113 132;
+	--background: oklch(19.2% 0.002 286.2);
+	--foreground: oklch(84.8% 0 0);
+	--primary: oklch(71.3% 0.0909 269.8);
+	--muted: oklch(43.7% 0.0298 252.2);
+	--links: oklch(65.3% 0.0467 243.3);
+	--border: oklch(26.9% 0.0203 285);
+	--error: oklch(70.2% 0.137 9.7);
+	--warning: oklch(74.8% 0.0836 66);
+	--green: oklch(80% 0.1113 132);
 	--font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
@@ -41,21 +38,22 @@ img {
 	height: autho;
 }
 
-/* pre { */
-/* 	border-radius: 0; */
-/* 	border: 1px dashed var(--border); */
-/* 	transition: box-shadow 100ms ease-in; */
-/**/
-/* 	&:hover { */
-/* 		border-color: var(--primary); */
-/* 	} */
-/* } */
+pre {
+	border-radius: 0;
+	font-family: "IBM Plex Mono", monospace;
+	background-color: transparent;
+	border: 1px dashed var(--border);
+	transition: box-shadow 100ms ease-in;
+
+	&:hover {
+		border-color: var(--primary);
+	}
+}
 
 /* -------- */
 html {
-	color: var(--foreground);
-	font-family: var(--font-family);
 	color-scheme: dark;
+	font-family: var(--font-family);
 }
 
 body {
@@ -64,6 +62,7 @@ body {
 	margin: 0;
 	border: 0;
 	background-color: var(--background);
+	color: var(--foreground);
 }
 
 main {
@@ -80,12 +79,5 @@ a {
 
 	&:hover {
 		color: var(--warning);
-	}
-}
-
-
-@layer components {
-	article {
-		@apply prose-blockquote: !not-italic;
 	}
 }
