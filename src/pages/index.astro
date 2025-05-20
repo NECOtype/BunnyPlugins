@@ -1,10 +1,10 @@
 ---
-import Base from '../layouts/Base.astro'
-import Link from '../componenets/Link.astro'
-import { sluggit } from '@utils'
+import Base from '../layouts/Base.astro';
+import Link from '../componenets/Link.astro';
+import { sluggit } from '@utils';
+import { getCollection } from 'astro:content';
 
-const modules = import.meta.glob('../content/fonts/*/**.json', { eager: true })
-const fonts = Object.values(modules).map((mod: any) => mod.default)
+const fonts = await getCollection("font");
 ---
 
 <Base title={'NECOdes - BunnyPlugins'}>
@@ -15,7 +15,7 @@ const fonts = Object.values(modules).map((mod: any) => mod.default)
 		<h2>Fonts</h2>
 		<ul>
 			{ fonts.map((font) => (
-			<li><Link href={`fonts/${sluggit(font.name)}`} text={font.name} /></li>
+			<li><Link href={`fonts/${font.data.slug || sluggit(font.data.title)}`} text={font.data.title} /></li>
 			)) }
 		</ul>
 	</section>
