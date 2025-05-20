@@ -2,14 +2,13 @@
 title: Montserrat
 source: fontsource.org
 date: 2025-5-10
+slug: montserrat
 ---
 
 # Montserrat
 
 > Montserrat is a geometric sans-serif typeface designed by Argentine graphic designer Julieta Ulanovsky and released in 2011.
 
-
-
-```html frame="code" title="Copy the font link your Bunny app"
-https://bunny.kat.tf/fonts/montserrat
+```text title="Paste the font link in your Revenge app"
+https://revenge.kat.tf/fonts/montserrat.json
 ```
