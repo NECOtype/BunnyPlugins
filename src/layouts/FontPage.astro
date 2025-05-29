@@ -4,12 +4,12 @@ import type { FontData } from "@/types";
 
 const { title, source, date } = Astro.props as FontData;
 ---
-<article class="prose prose-neutral prose-invert max-w-none">
-	<section>
-		<div class="text-muted flex mb-3 text-xs italic gap-2">
-			<span>{date}</span><Link href=`https://${source}` external text={source} />
-		</div>
-		<h1 class="text-3xl sm:text-4xl">{title}</h1>
-		<slot />
+<article class="h-full flex flex-col prose prose-neutral prose-invert max-w-none">
+	<h1 class="text-3xl sm:text-4xl mb-0">{title}</h1>
+	<section class="flex-grow">
+	<slot />
 	</section>
+	<div class="divide-x devide-border divide-solid text-muted flex text-xs italic gap-2">
+		<span class="pr-1.5">{date}</span><Link href=`https://${source}` external text={source} />
+	</div>
 </article>
