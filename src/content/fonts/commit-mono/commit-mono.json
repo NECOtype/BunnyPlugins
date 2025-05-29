@@ -1,0 +1,27 @@
+{
+  "spec": 1,
+  "name": "Commit Mono",
+  "previewText": "Commit Mono is an anonymous and neutral coding font focused on creating a better reading experience.",
+  "main": {
+    "ABCGintoNord-ExtraBold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf",
+    "ggsans-ExtraBold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf",
+    "ggsans-ExtraBoldItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-BoldItalic.ttf",
+    "ggsans-Bold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf",
+    "ggsans-BoldItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-BoldItalic.ttf",
+    "ggsans-Semibold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-SemiBold.ttf",
+    "ggsans-SemiboldItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-SemiBoldItalic.ttf",
+    "ggsans-Medium": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Medium.ttf",
+    "ggsans-MediumItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-MediumItalic.ttf",
+    "ggsans-Normal": "https://r2.neco.pm/fonts/commit-mono/commit-mono.ttf",
+    "ggsans-NormalItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Italic.ttf",
+    "NotoSans-ExtraBold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf",
+    "NotoSans-Bold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf",
+    "NotoSans-Semibold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-SemiBold.ttf",
+    "NotoSans-SemiboldItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-SemiBoldItalic.ttf",
+    "NotoSans-Medium": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Medium.ttf",
+    "NotoSans-MediumItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Medium.ttf",
+    "NotoSans-Normal": "https://r2.neco.pm/fonts/commit-mono/commit-mono.ttf",
+    "NotoSans-NormalItalic": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Italic.ttf",
+    "SourceCodePro-Semibold": "https://r2.neco.pm/fonts/commit-mono/commit-mono-Bold.ttf"
+  }
+}

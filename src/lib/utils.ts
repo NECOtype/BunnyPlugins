@@ -9,7 +9,7 @@ export function sluggit(text: string) {
 	return text
 		.toString()
 		.toLowerCase()
-		.replace(/\s+/g, '_')
+		.replace(/\s+/g, '-')
 		.replace(/[^\w-]+/g, '')
 		.replace(/--+/g, '-')
 		.replace(/^-+/, '')

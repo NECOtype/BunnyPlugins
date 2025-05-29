@@ -1,0 +1,27 @@
+{
+  "spec": 1,
+  "name": "IBM Plex",
+  "previewText": "BM Plex is the corporate typeface for IBM worldwide and an open-source project developed by the IBM Brand & Experience team (BX&D).",
+  "main": {
+    "ABCGintoNord-ExtraBold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Bold.ttf",
+    "ggsans-ExtraBold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Bold.ttf",
+    "ggsans-ExtraBoldItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-BoldItalic.ttf",
+    "ggsans-Bold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Bold.ttf",
+    "ggsans-BoldItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-BoldItalic.ttf",
+    "ggsans-Semibold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Semibold.ttf",
+    "ggsans-SemiboldItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-SemiboldItalic.ttf",
+    "ggsans-Medium": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Medium.ttf",
+    "ggsans-MediumItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-MediumItalic.ttf",
+    "ggsans-Normal": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex.ttf",
+    "ggsans-NormalItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Italic.ttf",
+    "NotoSans-ExtraBold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Bold.ttf",
+    "NotoSans-Bold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Bold.ttf",
+    "NotoSans-Semibold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Semibold.ttf",
+    "NotoSans-SemiboldItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-SemiboldItalic.ttf",
+    "NotoSans-Medium": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Medium.ttf",
+    "NotoSans-MediumItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-MediumItalic.ttf",
+    "NotoSans-Normal": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex.ttf",
+    "NotoSans-NormalItalic": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Italic.ttf",
+    "SourceCodePro-Semibold": "https://r2.neco.pm/fonts/ibm-plex/ibm-plex-Semibold.ttf"
+  }
+}
