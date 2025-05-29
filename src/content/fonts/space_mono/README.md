@@ -10,5 +10,5 @@ slug: space_mono
 > Space Mono is an original fixed-width type family designed by Colophon Foundry for Google Design. It supports a Latin Extended glyph set.
 
 ```text title="Paste the font link in your Revenge app"
-https://revenge.kat.tf/fonts/space_mono.json
+https://revenge.kat.tf/fonts/space_mono
 ```
