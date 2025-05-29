@@ -6,13 +6,13 @@ const { title } = Astro.props;
 ---
 <html
 	lang="en"
-	class="bg-background text-foreground"
+	class="bg-background text-foreground scheme-dark"
 >
 	<head>
 		<Head title={title}/>
 	</head>
-	<body class="h-svh p-space">
-		<main class="h-full max-w-2xl p-space m-auto border border-border border-dashed rounded-rad">
+	<body class="h-svh p-pad">
+		<main class="h-full max-w-2xl p-pad m-auto border border-border border-dashed rounded-rad">
 			<slot />
 		</main>
 	</body>

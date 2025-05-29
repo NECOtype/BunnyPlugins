@@ -5,12 +5,13 @@ interface Props {
 	href: string
 	text: string
 	class?: string
+	external?: boolean
 }
 
-const { href, text, class: className } = Astro.props;
+const { href, text, class: className, external } = Astro.props;
 ---
 <a
 	href={href}
-	target="_blank"
+	target={external ? "_blank" : "_self" }
 	class={cn("underline text-link hover:text-warning", className)}
 >{text}</a>
