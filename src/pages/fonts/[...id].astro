@@ -1,9 +1,14 @@
 ---
 import Layout from '@layouts/Base';
 import FontPage from '@layouts/FontArticle';
+
 import { getCollection, render } from 'astro:content';
 import { sluggit } from '../../lib/utils.js';
 import type { CollectionEntry } from 'astro:content';
+
+import { shouldServeJson } from '../../lib/request.ts';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 export async function getStaticPaths() {
 	const fonts = await getCollection("font");
@@ -16,6 +21,20 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"font">;
 
 const post = Astro.props;
+
+
+if (shouldServeJson(Astro.request)) {
+	const manifestPath = path.join("src/conent/fonts", post.data.slug || sluggit(post.data.title), `${post.data.slug}.json`)
+	const json = await fs.readFile(manifestPath, "utf-8");
+
+	return new Response(json, {
+		status: 200,
+		headers: {
+			"Content-Type": "application/json",
+		}
+	});
+}
+
 const { Content } = await render(post);
 ---
 
