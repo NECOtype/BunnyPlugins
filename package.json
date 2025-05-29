@@ -22,6 +22,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@astrojs/markdown-remark": "^6.3.2",
     "@tailwindcss/typography": "^0.5.16"
   }
 }
