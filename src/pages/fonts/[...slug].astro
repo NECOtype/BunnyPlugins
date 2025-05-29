@@ -1,9 +1,9 @@
 ---
-import Layout from '@layouts/Base.astro';
-import FontPage from '@layouts/FontPage.astro';
+import Layout from '@/layouts/Base.astro';
+import FontPage from '@/layouts/FontPage.astro';
 
 import { getCollection, render } from 'astro:content';
-import { sluggit, asksForJson } from '@lib/utils';
+import { sluggit, itsJson } from '@/lib/utils';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -11,12 +11,26 @@ import path from 'node:path';
 export const prerender = false;
 
 const { slug } = Astro.params;
-const fonts = await getCollection("font");
-const font = fonts.find(f => (f.data.slug || sluggit(f.data.title)) === (Array.isArray(slug) ? slug.join('/') : slug))
-if (!font) { throw new Error(`Font not found for id: ${slug}`); }
 
-if (asksForJson(Astro.request)) {
-	const id = font.data.slug || sluggit(font.data.title);
+const fonts = (await getCollection("font")).map(font => ({
+	...font,
+	slug: font.data.slug || sluggit(font.data.title),
+}));
+
+const font = fonts.find(f =>
+	(f.slug) === (Array.isArray(slug)
+		? slug.join('/')
+		: slug
+	)
+)
+
+if (!font) {
+	throw new Error(`Font not found for id: ${slug}`);
+}
+
+// return json if request is from Revenge
+if (itsJson(Astro.request)) {
+	const id = font.slug;
 	const manifestPath = path.resolve("src/content/fonts", id, `${id}.json`)
 
 	try {
@@ -37,12 +51,8 @@ if (asksForJson(Astro.request)) {
 
 const { Content } = await render(font);
 ---
-
 <Layout title=`Fonts - ${font.data.title}`>
 	<FontPage {...font.data}>
 		<Content />
 	</FontPage>
 </Layout>
-
-<style>
-</style>

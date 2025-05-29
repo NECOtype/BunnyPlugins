@@ -1,3 +1,10 @@
+import { twMerge } from "tailwind-merge";
+import { clsx, type ClassValue } from "clsx";
+
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs));
+}
+
 export function sluggit(text: string) {
 	return text
 		.toString()
@@ -9,11 +16,10 @@ export function sluggit(text: string) {
 		.replace(/-+$/, '')
 }
 
-export function asksForJson(request: Request): boolean {
+export function itsJson(request: Request): boolean {
 	const userAgent = request.headers.get("user-agent") ?? "";
 	const accept = request.headers.get("accept") ?? "";
 
-	// If it's a bot, or asking explicitly for JSON
 	return (
 		accept.includes("application/json") ||
 		/Discord|Revenge|Bunny/i.test(userAgent)

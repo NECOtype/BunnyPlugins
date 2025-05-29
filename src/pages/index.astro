@@ -1,23 +1,28 @@
 ---
 export const prerender = false;
 
-import Base from '@layouts/Base.astro';
-import Link from '@components/Link.astro';
-import { sluggit } from '@lib/utils';
+import Base from '@/layouts/Base.astro';
+import Link from '@/components/Link.astro';
+import { sluggit } from '@/lib/utils';
 import { getCollection } from 'astro:content';
 
-const fonts = await getCollection("font");
+const fonts = (await getCollection("font")).map(font => ({
+  ...font,
+  slug: font.data.slug || sluggit(font.data.title),
+}));
 ---
-
-<Base title={'NECOdes - BunnyPlugins'}>
-	<header>
-		<h1>BunnyPlugins</h1>
+<Base title={'NECOdes - RevengePlugins'}>
+	<header class="border-b-1 border-[var(--border)]">
+		<h1 text-4xl>BunnyPlugins</h1>
 	</header>
-	<section>
+	<section class="my-1">
 		<h2>Fonts</h2>
 		<ul>
 			{ fonts.map((font) => (
-			<li><Link href={`fonts/${font.data.slug || sluggit(font.data.title)}`} text={font.data.title} /></li>
+			<li class="pl-3 leading-tight">
+				<Link href={`fonts/${font.slug}`} text={font.data.title} />
+
+			</li>
 			)) }
 		</ul>
 	</section>
@@ -28,15 +33,3 @@ const fonts = await getCollection("font");
 		<h2>Themes</h2>
 	</section>
 </Base>
-
-<style>
-header {
-	border-bottom: 1px solid var(--cbor);
-}
-section {
-	margin-block: 0.5rem;
-}
-li {
-	padding-left: 1rem;
-}
-</style>

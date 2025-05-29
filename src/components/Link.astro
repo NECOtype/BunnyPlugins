@@ -1,5 +1,16 @@
 ---
-const { href, text } = Astro.props
----
+import { cn } from "@/lib/utils";
 
-<a href={href}>{text}</a>
+interface Props {
+	href: string
+	text: string
+	class?: string
+}
+
+const { href, text, class: className } = Astro.props;
+---
+<a
+	href={href}
+	target="_blank"
+	class={cn("underline text-link hover:text-warning", className)}
+>{text}</a>

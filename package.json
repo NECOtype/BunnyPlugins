@@ -5,13 +5,14 @@
     "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vercel": "^8.1.4",
     "@fontsource-variable/ibm-plex-sans": "^5.2.5",
-    "@fontsource/ibm-plex-sans-condensed": "^5.2.5",
     "@shikijs/transformers": "^3.4.2",
     "@supabase/supabase-js": "^2.49.4",
     "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.7.13",
+    "astro": "5.8.0",
+    "clsx": "^2.1.1",
     "rehype-pretty-code": "^0.14.1",
     "remark-emoji": "^5.0.1",
+    "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7"
   },
   "scripts": {
