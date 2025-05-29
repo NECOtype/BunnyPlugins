@@ -5,10 +5,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@fonts/*": ["src/fonts/*.json"],
-      "@layouts/*": ["src/layouts/*.astro"],
-      "@utils": ["src/lib/utils.js"],
-      "@components/*": ["src/componenets/*.astro"]
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@lib/*": ["src/lib/*"],
+      "@content/*": ["src/content/*"]
     }
   }
 }

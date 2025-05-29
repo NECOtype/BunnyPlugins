@@ -1,12 +1,12 @@
 ---
-import Layout from '@layouts/Base';
-import FontPage from '@layouts/FontArticle';
+import Layout from '@layouts/Base.astro';
+import FontPage from '@layouts/FontArticle.astro';
 
 import { getCollection, render } from 'astro:content';
-import { sluggit } from '../../lib/utils.js';
+import { sluggit } from '@lib/utils';
 import type { CollectionEntry } from 'astro:content';
 
-import { shouldServeJson } from '../../lib/request.ts';
+import { shouldServeJson } from '@lib/request';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
