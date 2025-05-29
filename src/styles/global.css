@@ -10,10 +10,10 @@
 	--color-primary: var(--primary);
 	--color-muted: var(--muted);
 	--color-link: var(--link);
+	--color-border: var(--border);
 	--color-error: var(--error);
 	--color-warning: var(--warning);
 	--color-success: var(--surccess);
-	--color-border: var(--border);
 
 	--spacing-pad: 1rem;
 	--radius-rad: 0rem;
@@ -73,32 +73,18 @@
 		@apply border-border;
 	}
 
-	ol,
-	ul,
-	menu {
-		@apply list-none;
+	::selection,
+	::-moz-selection {
+		@apply bg-primary text-muted;
 	}
+}
 
-	input,
-	textarea,
-	button {
-		color: inherit;
-	}
+@layer components {
+	.prose {}
+}
 
-	img {
-		max-width: 100%;
-		height: autho;
-	}
-
-	pre {
-		border-radius: 0;
-		font-family: var(--font-mono);
-		background-color: transparent;
-		border: 1px dashed var(--border);
-		transition: box-shadow 100ms ease-in;
-
-		&:hover {
-			border-color: var(--primary);
-		}
+@layer utility {
+	:where(pre) {
+		@apply border border-dashed rounded-rad hover:border-primary;
 	}
 }
