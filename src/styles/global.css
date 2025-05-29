@@ -78,10 +78,10 @@
 	}
 }
 
-/**/
-/* @layer components { */
-/* 	.prose {} */
-/* } */
+
+@layer components {
+	.prose {}
+}
 
 @layer utility {
 	:where(pre) {
@@ -90,5 +90,9 @@
 		& span {
 			@apply font-mono;
 		}
+	}
+
+	:where(blockquote) {
+		@apply text-muted border-border;
 	}
 }

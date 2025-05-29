@@ -5,7 +5,7 @@ import type { FontData } from "@/types";
 const { title, source, date } = Astro.props as FontData;
 ---
 <article class="h-full flex flex-col prose prose-neutral prose-invert max-w-none">
-	<h1 class="text-3xl sm:text-4xl mb-0">{title}</h1>
+	<h1 class="text-3xl sm:text-4xl mb-0 text-foreground">{title}</h1>
 	<section class="flex-grow">
 	<slot />
 	</section>
