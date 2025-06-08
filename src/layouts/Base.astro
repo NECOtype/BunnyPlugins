@@ -2,11 +2,15 @@
 import '@/styles/global.css'
 import Head from '@/components/Head.astro';
 
+import "@fontsource/ibm-plex-sans-condensed";
+import ibmPlexSansCondensedWoff2 from '@fontsource/ibm-plex-sans-condensed/files/ibm-plex-sans-condensed-latin-400-normal.woff2?url';
+
 const { title } = Astro.props;
 ---
 <html lang="en" transition:animate="initial">
 	<head>
 		<Head title={title}/>
+		<link rel="preload" as="font" type="font/woff2" href={ibmPlexSansCondensedWoff2} crossorigin="anonymous" />
 	</head>
 	<body class="p-pad">
 		<main class="h-full max-w-2xl p-pad m-auto border border-border border-dashed rounded-rad">
