@@ -60,17 +60,13 @@
 @layer utility {
 	pre {
 		@apply border border-dashed rounded-rad hover:border-primary;
-
-		& span {
-			@apply font-mono;
-		}
 	}
 
 	blockquote {
-		@apply prose [--tw-prose-quote-borders:theme(colors.border)];
+		@apply prose [--tw-prose-quote-borders:theme(colors.muted)] text-muted;
+	}
 
-		& p {
-			@apply text-muted border-border;
-		}
+	h1 {
+		@apply text-foreground text-3xl sm:text-4xl mb-0 font-bold;
 	}
 }
